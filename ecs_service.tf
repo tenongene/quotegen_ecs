@@ -47,7 +47,7 @@ resource "aws_ecs_service" "quotegen-svc" {
   cluster = aws_ecs_cluster.quotegen_app_cluster.arn
 
   task_definition = aws_ecs_task_definition.quotegen-task.arn
-  desired_count   = 1
+  desired_count   = 4
 
   capacity_provider_strategy {
     base              = 1

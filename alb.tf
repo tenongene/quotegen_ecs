@@ -15,6 +15,11 @@ module "alb" {
       backend_protocol = "HTTP"
       backend_port     = 80 
       target_type      = "instance"
+      health_check = {
+        matcher = "200-299"
+        path = "/health"
+        protocol = "HTTP"
+      }
   
     }
   ]

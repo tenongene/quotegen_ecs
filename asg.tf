@@ -2,7 +2,7 @@ resource "aws_autoscaling_group" "quotegen_ecs_asg" {
 
   name                      = "quotegen_ecs_asg"
   max_size                  = 8
-  min_size                  = 1
+  min_size                  = 4
   health_check_grace_period = 300
   health_check_type         = "ELB"
   desired_capacity          = 4

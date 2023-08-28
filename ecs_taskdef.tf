@@ -13,7 +13,7 @@ resource "aws_ecs_task_definition" "quotegen-task" {
       name      = "${local.container_name}"
       image     = "tenongene/quotegen:latest"
       cpu       = 1024
-      memory    = 512
+      memory    = 1024
 
       essential = true
       portMappings = [
