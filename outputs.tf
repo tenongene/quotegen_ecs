@@ -27,6 +27,6 @@ output "default_security_group_id" {
   value = module.vpc.default_security_group_id
 }
 
-output "quotgen_capacity_provider" {
-  value = aws_ecs_capacity_provider.quotegen_ecs_capacity_provider.arn
-}
+# output "quotgen_capacity_provider" {
+#   value = aws_ecs_capacity_provider.quotegen_ecs_capacity_provider.arn
+# }

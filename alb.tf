@@ -13,7 +13,7 @@ module "alb" {
     {
       name_prefix      = "tgp-"
       backend_protocol = "HTTP"
-      backend_port     = 80  
+      backend_port     = 80 
       target_type      = "instance"
   
     }
